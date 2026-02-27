@@ -1,4 +1,18 @@
 # UITrenning
+Text
+```csharp
 Unity UI trenning
-UI Toolkit for advanced Unity developers https://docs.unity3d.com/Manual/best-practice-guides/ui-toolkit-for-advanced-unity-developers/bpg-uiad-index.html
-UI systems https://docs.unity3d.com/Manual/UIToolkits.html
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using TMPro;
+
+public class Modify_text : MonoBehaviour {
+    public TMP_Text canvasText;
+
+    // Start is called before the first frame update
+    void Start() {
+        canvasText.text = "Hi, it's me!";
+    }
+}
+```
