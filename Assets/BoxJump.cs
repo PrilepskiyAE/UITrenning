@@ -4,9 +4,22 @@ using UnityEngine.UI;
 
 public class BoxJump : MonoBehaviour
 {
-   public void Jump()
+    [SerializeField]
+    private TMP_Text canvasText;
+
+    [SerializeField]
+    Slider h;
+    [SerializeField]
+    Slider w;
+
+    void Start()
     {
-        GetComponent<Rigidbody>().AddForce(0,100,0f);
+        h.value = transform.localScale.y;
+        w.value = transform.localScale.z;
+    }
+    public void Jump()
+    {
+        GetComponent<Rigidbody>().AddForce(0, 100, 0f);
     }
 
     public void ChangeMass(float delta)
