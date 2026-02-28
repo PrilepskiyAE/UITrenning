@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class BoxJump : MonoBehaviour
 {
@@ -12,6 +13,16 @@ public class BoxJump : MonoBehaviour
     [SerializeField]
     Slider w;
 
+    [SerializeField]
+    private List<GameObject> caps;
+
+    public void SetCap(int index)
+    {
+        for(int i = 0; i < caps.Count; i++) {
+         caps[i].SetActive(i==index);   
+        }
+    }
+
     void Start()
     {
         h.value = transform.localScale.y;
@@ -19,7 +30,7 @@ public class BoxJump : MonoBehaviour
     }
     public void Jump()
     {
-        GetComponent<Rigidbody>().AddForce(0, 100, 0f);
+        GetComponent<Rigidbody>().AddForce(0, 300, 0f);
     }
 
     public void ChangeMass(float delta)
