@@ -2,6 +2,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using System;
 
 public class BoxJump : MonoBehaviour
 {
@@ -15,6 +16,12 @@ public class BoxJump : MonoBehaviour
 
     [SerializeField]
     private List<GameObject> caps;
+
+    [SerializeField]
+    private Renderer renderer;
+
+    [SerializeField]
+    private TMP_Text nameText;
 
     public void SetCap(int index)
     {
@@ -51,5 +58,14 @@ public class BoxJump : MonoBehaviour
         transform.localScale = new Vector3(value,transform.localScale.y,value);
     }
 
+ public void SetMatrial(Material material)
+    {
+        renderer.material=material;
+    }
 
+    public void SetName(String name)
+    {
+        nameText.text=name;
+    }
+    
 }
