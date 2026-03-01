@@ -16,3 +16,4 @@ public class Modify_text : MonoBehaviour {
     }
 }
 ```
+![Image alt](https://github.com/PrilepskiyAE/UITrenning/blob/dev/screen1.png)
