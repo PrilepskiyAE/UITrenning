@@ -2914,13 +2914,25 @@ MonoBehaviour:
   m_FillRect: {fileID: 1131117763}
   m_HandleRect: {fileID: 643112995}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 1
+  m_MinValue: 1
+  m_MaxValue: 3
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1570231283}
+        m_TargetAssemblyTypeName: SnowMan, Assembly-CSharp
+        m_MethodName: SetHeight
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &787145925
 GameObject:
   m_ObjectHideFlags: 0
@@ -4807,10 +4819,10 @@ RectTransform:
   - {fileID: 1475645852}
   m_Father: {fileID: 729889321}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.019375004, y: 0.45900002}
-  m_AnchorMax: {x: 0.17500001, y: 0.5261687}
-  m_AnchoredPosition: {x: -85.5, y: -67.5}
-  m_SizeDelta: {x: -199, y: 33}
+  m_AnchorMin: {x: 0.02875, y: 0.407}
+  m_AnchorMax: {x: 0.22043751, y: 0.532}
+  m_AnchoredPosition: {x: -1.0001221, y: 1}
+  m_SizeDelta: {x: 15, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1529264346
 MonoBehaviour:
@@ -4935,6 +4947,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1570231282}
+  - component: {fileID: 1570231283}
   m_Layer: 0
   m_Name: Snowman
   m_TagString: Untagged
@@ -4960,6 +4973,25 @@ Transform:
   - {fileID: 295982886}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -90.017, z: 0}
+--- !u!114 &1570231283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570231281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad105d79d06e3e5de9c9f7288d38287f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasText: {fileID: 0}
+  h: {fileID: 759605338}
+  w: {fileID: 2103396860}
+  caps: []
+  noses: []
+  renderer: {fileID: 0}
+  nameText: {fileID: 0}
 --- !u!1 &1682456944
 GameObject:
   m_ObjectHideFlags: 0
@@ -5628,7 +5660,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0225, y: 0.36100003}
   m_AnchorMax: {x: 0.11943751, y: 0.36100003}
-  m_AnchoredPosition: {x: -4.000122, y: 3.5}
+  m_AnchoredPosition: {x: -10.799988, y: 25.099998}
   m_SizeDelta: {x: 14, y: 49}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1923999658
@@ -5717,7 +5749,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -78.91043, w: -25.326897}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -6557,12 +6589,24 @@ MonoBehaviour:
   m_HandleRect: {fileID: 320156816}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 3
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1570231283}
+        m_TargetAssemblyTypeName: SnowMan, Assembly-CSharp
+        m_MethodName: SetWiht
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
