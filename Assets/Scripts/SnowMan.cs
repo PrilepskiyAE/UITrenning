@@ -21,7 +21,7 @@ public class SnowMan : MonoBehaviour
     private List<GameObject> noses;
 
     [SerializeField]
-    private Renderer renderer;
+    private List<Renderer> renderer;
 
     [SerializeField]
     private TMP_Text nameText;
@@ -51,5 +51,21 @@ public class SnowMan : MonoBehaviour
          noses[i].SetActive(i==index);   
         }
     }
+
+     public void SetMatrial(Material material)
+    {
+        for(int i = 0; i < renderer.Count; i++) {
+           renderer[i].material = material; 
+        }
+        
+    }
+
+       public void SetCap(int index)
+    {
+        for(int i = 0; i < caps.Count; i++) {
+         caps[i].SetActive(i==index);   
+        }
+    }
+
 
 }

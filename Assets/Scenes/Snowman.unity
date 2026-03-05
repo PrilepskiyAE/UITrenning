@@ -356,6 +356,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 115305099}
   m_CullTransparentMesh: 1
+--- !u!1 &136912049 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7432622799770361029, guid: 51a67f3bc21583a409feb699124a9203, type: 3}
+  m_PrefabInstance: {fileID: 431794633}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &138130286
 GameObject:
   m_ObjectHideFlags: 0
@@ -630,8 +635,8 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: BoxJump, Assembly-CSharp
+      - m_Target: {fileID: 1570231283}
+        m_TargetAssemblyTypeName: SnowMan, Assembly-CSharp
         m_MethodName: SetMatrial
         m_Mode: 2
         m_Arguments:
@@ -1576,43 +1581,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7813230378779952767, guid: 51a67f3bc21583a409feb699124a9203, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.0354226
+      value: 0.000017075474
       objectReference: {fileID: 0}
     - target: {fileID: 7813230378779952767, guid: 51a67f3bc21583a409feb699124a9203, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.11663072
+      value: 89.99998
       objectReference: {fileID: 0}
     - target: {fileID: 7813230378779952767, guid: 51a67f3bc21583a409feb699124a9203, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.17946076
+      value: 265.76724
       objectReference: {fileID: 0}
     - target: {fileID: 7813230378779952767, guid: 51a67f3bc21583a409feb699124a9203, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.41513258
+      value: -0.4811943
       objectReference: {fileID: 0}
     - target: {fileID: 7813230378779952767, guid: 51a67f3bc21583a409feb699124a9203, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.49673346
+      value: 0.51812345
       objectReference: {fileID: 0}
     - target: {fileID: 7813230378779952767, guid: 51a67f3bc21583a409feb699124a9203, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.50322354
+      value: -0.4811943
       objectReference: {fileID: 0}
     - target: {fileID: 7813230378779952767, guid: 51a67f3bc21583a409feb699124a9203, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.57243943
+      value: 0.5181238
       objectReference: {fileID: 0}
     - target: {fileID: 7813230378779952767, guid: 51a67f3bc21583a409feb699124a9203, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 98.67801
-      objectReference: {fileID: 0}
-    - target: {fileID: 7813230378779952767, guid: 51a67f3bc21583a409feb699124a9203, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7813230378779952767, guid: 51a67f3bc21583a409feb699124a9203, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7813230378779952767, guid: 51a67f3bc21583a409feb699124a9203, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -9.406006
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1728,8 +1733,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: BoxJump, Assembly-CSharp
+      - m_Target: {fileID: 1570231283}
+        m_TargetAssemblyTypeName: SnowMan, Assembly-CSharp
         m_MethodName: SetCap
         m_Mode: 0
         m_Arguments:
@@ -1883,9 +1888,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: BoxJump, Assembly-CSharp
-        m_MethodName: SetCap
+      - m_Target: {fileID: 1570231283}
+        m_TargetAssemblyTypeName: SnowMan, Assembly-CSharp
+        m_MethodName: SetNose
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2018,13 +2023,25 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: BoxJump, Assembly-CSharp
+      - m_Target: {fileID: 1570231283}
+        m_TargetAssemblyTypeName: SnowMan, Assembly-CSharp
         m_MethodName: SetMatrial
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 2100000, guid: 7edc051ef3914c6c997b3d57031a3ada, type: 2}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: SnowMan, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2933,6 +2950,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &780108722 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1848147560508530006, guid: 3da8a04d633151f4f9041cfe43eff63c, type: 3}
+  m_PrefabInstance: {fileID: 1830353283}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &787145925
 GameObject:
   m_ObjectHideFlags: 0
@@ -4483,6 +4505,11 @@ Transform:
   - {fileID: 275869768}
   m_Father: {fileID: 295982886}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1304312674 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5318347711016937051, guid: 9604e785e0c65f94aa22cfd3f926f4be, type: 3}
+  m_PrefabInstance: {fileID: 731054183}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1475645851
 GameObject:
   m_ObjectHideFlags: 0
@@ -4567,8 +4594,8 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: BoxJump, Assembly-CSharp
+      - m_Target: {fileID: 1570231283}
+        m_TargetAssemblyTypeName: SnowMan, Assembly-CSharp
         m_MethodName: SetMatrial
         m_Mode: 2
         m_Arguments:
@@ -4717,6 +4744,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1503023740}
   m_CullTransparentMesh: 1
+--- !u!1 &1511615509 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2f091eac98fee8845927490e8fa947d6, type: 3}
+  m_PrefabInstance: {fileID: 275869767}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1524087514
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4988,9 +5020,17 @@ MonoBehaviour:
   canvasText: {fileID: 0}
   h: {fileID: 759605338}
   w: {fileID: 2103396860}
-  caps: []
-  noses: []
-  renderer: {fileID: 0}
+  caps:
+  - {fileID: 1511615509}
+  - {fileID: 2119890970}
+  noses:
+  - {fileID: 136912049}
+  - {fileID: 780108722}
+  - {fileID: 1304312674}
+  renderer:
+  - {fileID: 295982888}
+  - {fileID: 1256864887}
+  - {fileID: 1263617135}
   nameText: {fileID: 0}
 --- !u!1 &1682456944
 GameObject:
@@ -5372,43 +5412,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1364063774300817388, guid: 3da8a04d633151f4f9041cfe43eff63c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.6030001
+      value: 0.023
       objectReference: {fileID: 0}
     - target: {fileID: 1364063774300817388, guid: 3da8a04d633151f4f9041cfe43eff63c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.08199994
+      value: -1.558
       objectReference: {fileID: 0}
     - target: {fileID: 1364063774300817388, guid: 3da8a04d633151f4f9041cfe43eff63c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.078999996
+      value: 0.122
       objectReference: {fileID: 0}
     - target: {fileID: 1364063774300817388, guid: 3da8a04d633151f4f9041cfe43eff63c, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.0051725805
+      value: 0.39448395
       objectReference: {fileID: 0}
     - target: {fileID: 1364063774300817388, guid: 3da8a04d633151f4f9041cfe43eff63c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.858459
+      value: 0.58684117
       objectReference: {fileID: 0}
     - target: {fileID: 1364063774300817388, guid: 3da8a04d633151f4f9041cfe43eff63c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.5127804
+      value: 0.3944834
       objectReference: {fileID: 0}
     - target: {fileID: 1364063774300817388, guid: 3da8a04d633151f4f9041cfe43eff63c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.00881803
+      value: 0.58684134
       objectReference: {fileID: 0}
     - target: {fileID: 1364063774300817388, guid: 3da8a04d633151f4f9041cfe43eff63c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -1.027
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1364063774300817388, guid: 3da8a04d633151f4f9041cfe43eff63c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 179.436
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 1364063774300817388, guid: 3da8a04d633151f4f9041cfe43eff63c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -241.69699
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1848147560508530006, guid: 3da8a04d633151f4f9041cfe43eff63c, type: 3}
       propertyPath: m_Name
@@ -6106,13 +6146,25 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: BoxJump, Assembly-CSharp
+      - m_Target: {fileID: 1570231283}
+        m_TargetAssemblyTypeName: SnowMan, Assembly-CSharp
         m_MethodName: SetMatrial
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 2100000, guid: 72669c1817fc25472937601cce386351, type: 2}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: SnowMan, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -6607,6 +6659,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &2119890970 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: dbb5c6b8a271789cdbefe927cbe33924, type: 3}
+  m_PrefabInstance: {fileID: 1048078007}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
